@@ -1,0 +1,85 @@
+
+.profile-menu-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vh;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fafafa;
+}
+
+.avatar{
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid #bda83f;
+    transition: transform .36s;
+}
+
+.avatar:hover{
+    transform: scale(1.1);
+}
+
+.avatar img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.menu-dropdown{
+    position: fixed;
+    top: 50%;
+    left: 52%;
+    width: 220px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(-10%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+.menu-header{
+    padding: 12px;
+    border-bottom: 1px solid #4e0808;
+    background-color: #f2efdc;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.menu-header strong{
+    display: block;
+    font-size: 16px;
+}
+
+.menu-header small{
+    color: #333333;
+}
+
+.menu-dropdown ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.menu-dropdown li{
+    padding: 12px ;
+}
